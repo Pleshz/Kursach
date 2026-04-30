@@ -2,10 +2,15 @@
 nixPkgs = ["php", "composer"]
 
 [phases.install]
-cmds = ["composer install --no-dev --optimize-autoloader"]
+cmds = [
+  "composer install --no-dev --optimize-autoloader"
+]
 
 [phases.build]
-cmds = ["php artisan config:clear"]
+cmds = [
+  "php artisan config:clear",
+  "php artisan cache:clear"
+]
 
 [start]
 cmd = "php -S 0.0.0.0:$PORT -t public"
