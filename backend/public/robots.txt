@@ -1,15 +1,14 @@
 User-agent: *
 Allow: /
-Allow: /about
 Allow: /login
 Allow: /register
-Allow: /cars/
 
 Disallow: /admin
 Disallow: /admin/
 Disallow: /account
 Disallow: /account/
 Disallow: /app
+Disallow: /app/
 Disallow: /order/
 Disallow: /api/
 

@@ -1,17 +1,6 @@
 <template>
   <body class="min-h-screen bg-gray-50 text-gray-800">
     <header class="border-b border-solid border-gray-200 bg-white">
-      <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108989745', 'ym');
-      
-        ym(108989745, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-      </script>
-      <noscript><div><img src="https://mc.yandex.ru/watch/108989745" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
       <div class="px-6 max-[767px]:px-4 max-[479px]:px-3 py-4 flex flex-wrap items-center justify-between gap-4 max-w-6xl mx-auto">
         <router-link to="/" class="text-2xl font-bold text-gray-900 no-underline">
           CarShare
@@ -50,8 +39,9 @@
                 Каршеринг CarShare — аренда авто по минутам и часам
               </h1>
               <p class="text-lg max-[767px]:text-base text-gray-700 pb-6 leading-relaxed">
-                Забирайте автомобиль в нескольких кликах: онлайн-бронирование, прозрачные тарифы, страхование и техподдержка 24/7.
-                Подходит для поездок по городу и за его пределами.
+                CarShare - каршеринг с онлайн-бронированием за 2 минуты, прозрачными тарифами без скрытых платежей,
+                страхованием и поддержкой 24/7. Зарегистрируйтесь сейчас и получите быстрый доступ к авто для поездок
+                по городу и за его пределами.
               </p>
               <div class="flex flex-wrap gap-4 text-center lg:text-left">
                 <router-link
@@ -270,7 +260,7 @@ onMounted(() => {
   }
   meta.setAttribute(
     'content',
-    'Главная страница CarShare: описание сервиса, тарифы аренды, команда и контакты компании.',
+    'CarShare - каршеринг и аренда авто онлайн по минутам, часам и суткам. Прозрачные тарифы, быстрое бронирование. Зарегистрируйтесь и начните первую поездку уже сегодня.',
   )
 })
 </script>
